@@ -24,10 +24,10 @@ if __name__ == "__main__":
     for i in todos:
         harley_quin = {}
         if id == i.get('userId'):
-           harley_quin['task'] = i.get('title')
-           harley_quin['completed'] = i.get('completed')
-           harley_quin['username'] = username
-           joker.append(harley_quin)
+            harley_quin['task'] = i.get('title')
+            harley_quin['completed'] = i.get('completed')
+            harley_quin['username'] = username
+            joker.append(harley_quin)
     wonder_woman = {}
     wonder_woman[id] = joker
 
