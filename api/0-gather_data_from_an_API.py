@@ -23,15 +23,15 @@ if __name__ == "__main__":
             name = i.get('name')
     for i in todos:
         if id == i.get('userId'):
-            if i.get('completed') == True:
+            if i.get('completed') is True:
                 task_completed += 1
-            if i.get('completed') == False or i.get('completed') == True:
+            if i.get('completed') is False or i.get('completed') is True:
                 total_tasks += 1
     print(
         f'Employee {name} is done with tasks({task_completed}/{total_tasks}):')
 
     for i in todos:
         if id == i.get('userId'):
-            if i.get('completed') == True:
+            if i.get('completed') is True:
                 task_title = i.get('title')
                 print(f'\t {task_title}')
